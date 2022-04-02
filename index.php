@@ -7,7 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
   
 
     <title>GuitarView</title>
@@ -18,10 +18,10 @@
       <div class="container">
         <div class="row">
           <div class="col">
-            <h1>logo</h1>
+            <img src="img/guitarview350.png" alt="">
           </div>
           <div class="col">
-            <h1>titulo</h1>
+            <h1>buscador</h1>
           </div>
           <div class="col">
             <h1>Espacio para menu</h1>
@@ -38,30 +38,48 @@
           <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
           <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 4"></button>
         </div>
+
         <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="10000">
-            <img src="img/acustica.jpg" class="d-block w-50" alt="...">
-            <div class="carousel-caption d-none d-md-block">
+          <div  class="carousel-item active" data-bs-interval="10000">
+            <img src="img/01.jpg" class="d-block w-30 carousel" alt="...">
+            <div class="carousel-caption d-none d-md-block" >
               <h5>First slide label</h5>
               <p>Some representative placeholder content for the first slide.</p>
             </div>
           </div>
           <div class="carousel-item" data-bs-interval="2000">
-            <img src="img/criolla.jpg" class="d-block w-30" alt="...">
+            <img src="img/02.jpg" class="d-block w-30 carousel" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h5>Second slide label</h5>
               <p>Some representative placeholder content for the second slide.</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="img/electrica.jpg" class="d-block w-30" alt="...">
+            <img src="img/03.jpg" class="d-block w-20 carousel" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="img/04.jpg" class="d-block w-30 carousel" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/05.jpg" class="d-block w-30 carousel" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h5>Third slide label</h5>
               <p>Some representative placeholder content for the third slide.</p>
             </div>
           </div>
         </div>
+
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
