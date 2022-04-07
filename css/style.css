@@ -1,4 +1,4 @@
-.root{
+*{
     margin: 0;
     padding: 0;
 }
@@ -13,17 +13,28 @@ body{
 h2{
     color: #886a4a;
 }
-.menu_nav{
-    text-align: right;
-}
+
 .card_comparacion{
     padding: auto 5%;
 }
 .card{
     margin: 0 2em;;
 }
-.slide{
-    margin: auto 10%;
-    width: 80%;
-    height: 703px;
+.bordes{
+    border-bottom: 2px solid #886a4a;
+}
+.text_guitaras{
+    color: #707070;
+    text-align: justify;
+}
+.text_guitarasH{
+    color: #E3874F;
+}
+hr{
+    width:35%;
+    background-color:#E3874F;
+}
+.tableLight{
+    background-color: white;
+    width: 75%;
 }
