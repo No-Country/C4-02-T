@@ -37,38 +37,109 @@
     
     <!-- portada - cabecera -->
     <img src="img/cabecera.jpg" class="img-fluid rounded mx-auto d-block" alt="portada" width="100%">
-    <div class="container-fluid container">
-
-      <table class="table tableLight table-sm" >
-        <thead>
-          <tr>
-            
-            <th scope="col">Guitarra</th>
-            <th scope="col">Cuerdas</th>
-            <th scope="col">Trastes</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fbp2.blogger.com%2F_0zKK5jSvkHY%2FSD6u8k7gPoI%2FAAAAAAAAAWE%2FibpmBgvm5zI%2Fw1200-h630-p-k-no-nu%2Fstratocaster-25-aniversario.jpg&f=1&nofb=1" alt="fender25th"></td>
-            <td>6</td>
-            <td>21</td>
-          </tr>
-          <tr>
-          <td><img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F2.bp.blogspot.com%2F-Tqqn3dgYfKw%2FUGaNMNVUbDI%2FAAAAAAAAAB8%2Fg8G8JnEx_4Q%2Fs400%2FGibson-ES0335-1964.jpeg&f=1&nofb=1" alt="gibsonES0335"></td>
-            <td>6</td>
-            <td>22</td>
-          </tr>
-          <tr>
-          <td><img src="" alt=""></td>
-            <td>6</td>
-            <td>22</td>
-          </tr>
-        </tbody>
-      </table>
-
+    
+    <div class="container-fluid col col-12">
+      <div class="container  ">
+        <div class="container">
+          <br><h1>Listado de Guitarras Mejor Rankeadas</h1>          
+          <table class="table table-dark">
+            <thead>
+              <tr>
+                <th scope="col-"></th>
+                <th scope="col">Marca</th>
+                <th scope="col">Modelo</th>
+                <th scope="col">Cuerdas</th>
+                <th scope="col">Puente</th>
+                <th scope="col">Trastes</th>
+                <th scope="col">Puntuacion</th>  
+                
+              </tr>
+            </thead>
+            <tbody>
+              <tr>      
+                <td class="col col-2"> <!-- modifical el 2 para redimensionar la imagen de 1 a 12  -->
+                  <div class="container-fluid">
+                    <img src="img/Yamaha-RSP02T-horizontal.jpg" class="col col-12" alt="">
+                  </div>
+                </td>          
+                <td>Yamaha</td>
+                <td>RSP02T</td>
+                <td>4</td>
+                <td>Madera</td>
+                <td>24</td>
+                <td>8.5</td>
+              </tr>
+              <tr>      
+                <td class="col col-2"> <!-- modifical el 2 para redimensionar la imagen de 1 a 12  -->
+                  <div class="container-fluid">
+                    <img src="img/Yamaha-RSP02T-horizontal.jpg" class="col col-12" alt="">
+                  </div>
+                </td>          
+                <td>Yamaha</td>
+                <td>RSP02T</td>
+                <td>4</td>
+                <td>Madera</td>
+                <td>24</td>
+                <td>8.5</td>
+              </tr>
+                      <tr>      
+                <td class="col col-2"> <!-- modifical el 2 para redimensionar la imagen de 1 a 12  -->
+                  <div class="container-fluid">
+                    <img src="img/Yamaha-RSP02T-horizontal.jpg" class="col col-12" alt="">
+                  </div>
+                </td>          
+                <td>Yamaha</td>
+                <td>RSP02T</td>
+                <td>4</td>
+                <td>Madera</td>
+                <td>24</td>
+                <td>8.5</td>
+              </tr>
+                      <tr>      
+                <td class="col col-2"> <!-- modifical el 2 para redimensionar la imagen de 1 a 12  -->
+                  <div class="container-fluid">
+                    <img src="img/Yamaha-RSP02T-horizontal.jpg" class="col col-12" alt="">
+                  </div>
+                </td>          
+                <td>Yamaha</td>
+                <td>RSP02T</td>
+                <td>4</td>
+                <td>Madera</td>
+                <td>24</td>
+                <td>8.5</td>
+              </tr>
+                      <tr>      
+                <td class="col col-4"> <!-- modifical el 2 para redimensionar la imagen de 1 a 12  -->
+                  <div class="container-fluid">
+                    <img src="img/Yamaha-RSP02T-horizontal.jpg" class="col col-12" alt="">
+                  </div>
+                </td>          
+                <td>Yamaha</td>
+                <td>RSP02T</td>
+                <td>4</td>
+                <td>Madera</td>
+                <td>24</td>
+                <td>8.5</td>
+              </tr>        <tr>      
+                <td class="col col-2"> <!-- modifical el 2 para redimensionar la imagen de 1 a 12  -->
+                  <div class="container-fluid">
+                    <img src="img/Yamaha-RSP02T-horizontal.jpg" class="col col-12" alt="">
+                  </div>
+                </td>          
+                <td>Yamaha</td>
+                <td>RSP02T</td>
+                <td>4</td>
+                <td>Madera</td>
+                <td>24</td>
+                <td>8.5</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
     </div>
 
+<<<<<<< Updated upstream
     <footer class="bg-dark text-center text-white borde_footer">
       
     <div class="container p-4 pb-0">
@@ -90,6 +161,8 @@
       </div>
       <!-- Copyright -->
     </footer>
+=======
+>>>>>>> Stashed changes
 
     
 
