@@ -13,15 +13,24 @@ body{
 h2{
     color: #886a4a;
 }
-
+a{
+    text-decoration: none;
+}
+.ico{
+    background-color: #E3874F;
+}
 .card_comparacion{
     padding: auto 5%;
 }
 .card{
     margin: 0 2em;;
 }
-.bordes{
+.borde_nav{
     border-bottom: 2px solid #886a4a;
+}
+.borde_footer{
+    border-top: 2px solid #886a4a;
+    color: #707070;
 }
 .text_guitaras{
     color: #707070;
@@ -37,4 +46,7 @@ hr{
 .tableLight{
     background-color: white;
     width: 75%;
+}
+.text_footer{
+    color: #707070;
 }

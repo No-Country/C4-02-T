@@ -23,7 +23,7 @@
 
                     <div class="collapse navbar-collapse nav justify-content-end" id="navbarNavDropdown">
                         <ul class="navbar-nav">
-                            
+                        <a name="inicio"></a>
                             <li class="nav-item">
                                 <a class="btn btn-outline-secondary" href="index.php">Home</a>
                             </li>
@@ -151,44 +151,26 @@
       <hr>
     </div>
 
-
-    <!-- cards -->
-    <div  class="row card_comparacion d-flex justify-content-center">
-      
-    <div class="card col col-6" style="width: 25rem;">
-      <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fbp2.blogger.com%2F_0zKK5jSvkHY%2FSD6u8k7gPoI%2FAAAAAAAAAWE%2FibpmBgvm5zI%2Fw1200-h630-p-k-no-nu%2Fstratocaster-25-aniversario.jpg&f=1&nofb=1" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Fender Stratocaster 25 Aniversario</h5>
-        <p class="card-text">Este modelo de 1979, que conmemora los 25 años de producción de la Strato, lleva una inscripción de aniversario en el cuerpo y clavijas de lujo. </p>
-      </div>
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item">Cuerdas: 6</li>
-        <li class="list-group-item">Madera cuerpo: caoba</li>
-        <li class="list-group-item">A third item</li>
-      </ul>
-      <div class="card-body">
-        <a href="#" class="card-link">Card link</a>
-        <a href="#" class="card-link">Another link</a>
-      </div>
+    <footer class="bg-dark text-center text-white borde_footer">
+    <div class="container p-4 pb-0">
+      <!-- Section: CTA -->
+      <section class="">
+        <a href="#inicio">
+          <p class="d-flex justify-content-center align-items-center">
+          <button type="button" class="btn btn-outline-secondary">Volver arriba</button>
+          </p>
+        </a>
+      </section>
+      <!-- Section: CTA -->
     </div>
 
-    <div class="card col col-6" style="width: 25rem;">
-      <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F2.bp.blogspot.com%2F-Tqqn3dgYfKw%2FUGaNMNVUbDI%2FAAAAAAAAAB8%2Fg8G8JnEx_4Q%2Fs400%2FGibson-ES0335-1964.jpeg&f=1&nofb=1" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Gibson ES0335 belongs to Eric Clapton</h5>
-        <p class="card-text">En 1964 con precios de $ 847.500. Eric Clapton usa esta guitarra desde 1964, pero rara vez se usa después de que la guitarra se ofrece a un precio de $ 847,500 en una subasta. Este es el precio más alto jamás subastado en una guitarra Gibson en ese momento. </p>
+      <!-- Copyright -->
+      <div class="text-center p-3 text_footer" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2022 Copyright:
+        <a class="text_footer" href="#">noCountry/C4-02-T</a>
       </div>
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item">Cuerdas: 6</li>
-        <li class="list-group-item">A second item</li>
-        <li class="list-group-item">A third item</li>
-      </ul>
-      <div class="card-body">
-        <a href="#" class="card-link">Card link</a>
-        <a href="#" class="card-link">Another link</a>
-      </div>
-    </div>
-    </div>
+      <!-- Copyright -->
+    </footer>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
