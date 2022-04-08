@@ -15,11 +15,12 @@
   <body>
     <!-- header -->
             <!-- navbar -->
-            <nav class="navbar navbar-expand-lg grid bordes">
+            <nav class="navbar navbar-expand-lg grid borde_nav">
                 <div class="container-fluid">
                     <img src="img/guitarview350.png" alt="logo">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     </button>
+                    <a name="inicio"></a>
 
                     <div class="collapse navbar-collapse nav justify-content-end" id="navbarNavDropdown">
                         <ul class="navbar-nav">
@@ -67,6 +68,28 @@
       </table>
 
     </div>
+
+    <footer class="bg-dark text-center text-white borde_footer">
+      
+    <div class="container p-4 pb-0">
+      <!-- Section: CTA -->
+      <section class="">
+        <a href="#inicio">
+          <p class="d-flex justify-content-center align-items-center">
+          <button type="button" class="btn btn-outline-secondary">Volver arriba</button>
+          </p>
+        </a>
+      </section>
+      <!-- Section: CTA -->
+    </div>
+
+      <!-- Copyright -->
+      <div class="text-center p-3 text_footer" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2022 Copyright:
+        <a class="text_footer" href="#">noCountry/C4-02-T</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
 
     
 
