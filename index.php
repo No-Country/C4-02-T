@@ -13,6 +13,7 @@
     <title>GuitarView - home</title>
   </head>
   <body>
+  <a name="inicio"></a>
     <!-- header -->
             <!-- navbar -->
             <nav class="navbar navbar-expand-lg grid borde_nav">
@@ -20,11 +21,11 @@
                     <img src="img/guitarview350.png" alt="logo">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     </button>
-                    <a name="inicio"></a>
-
                     <div class="collapse navbar-collapse nav justify-content-end" id="navbarNavDropdown">
                         <ul class="navbar-nav">
-                            
+                            <li class="nav-item">
+                                <a class="btn btn-outline-secondary" href="index.php">Home</a>
+                            </li>
                             <li class="nav-item">
                                 <a class="btn btn-outline-secondary" href="caracteristicas.php">Tipos de guitarra</a>
                             </li>
