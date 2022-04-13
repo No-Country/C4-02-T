@@ -8,6 +8,13 @@
     <!-- Bootstrap CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" type="text/css" rel="stylesheet">
+
+    <style>
+      .remove-bg{
+        filter: brightness(1.1);
+        mix-blend-mode: multiply;
+      }
+    </style>
   
 
     <title>GuitarView - home</title>
@@ -39,10 +46,10 @@
     <!-- portada - cabecera -->
     <img src="img/cabecera.jpg" class="img-fluid rounded mx-auto d-block" alt="portada" width="100%">
     
-    <div class="container-fluid col col-12">
+    <div class="container-fluid col col-12 text-center">
       <div class="container  ">
         <div class="container">
-          <br><h1>Listado de Guitarras Mejor Rankeadas</h1>          
+          <br><h1 style="color: #900C3F;">Listado de Guitarras Mejor Rankeadas</h1>          
           <table class="table table-dark">
             <thead>
               <tr>
@@ -57,78 +64,14 @@
               </tr>
             </thead>
             <tbody>
-              <tr>      
+              <tr >      
                 <td class="col col-2"> <!-- modifical el 2 para redimensionar la imagen de 1 a 12  -->
                   <div class="container-fluid">
-                    <img src="img/Yamaha-RSP02T-horizontal.jpg" class="col col-12" alt="">
+                    <img src="img/YAMAHA/Yamaha-PAC611VFM-horizontal.png" class="col col-12" alt="">
                   </div>
                 </td>          
-                <td>Yamaha</td>
-                <td>RSP02T</td>
-                <td>4</td>
-                <td>Madera</td>
-                <td>24</td>
-                <td>8.5</td>
-              </tr>
-              <tr>      
-                <td class="col col-2"> <!-- modifical el 2 para redimensionar la imagen de 1 a 12  -->
-                  <div class="container-fluid">
-                    <img src="img/Yamaha-RSP02T-horizontal.jpg" class="col col-12" alt="">
-                  </div>
-                </td>          
-                <td>Yamaha</td>
-                <td>RSP02T</td>
-                <td>4</td>
-                <td>Madera</td>
-                <td>24</td>
-                <td>8.5</td>
-              </tr>
-                      <tr>      
-                <td class="col col-2"> <!-- modifical el 2 para redimensionar la imagen de 1 a 12  -->
-                  <div class="container-fluid">
-                    <img src="img/Yamaha-RSP02T-horizontal.jpg" class="col col-12" alt="">
-                  </div>
-                </td>          
-                <td>Yamaha</td>
-                <td>RSP02T</td>
-                <td>4</td>
-                <td>Madera</td>
-                <td>24</td>
-                <td>8.5</td>
-              </tr>
-                      <tr>      
-                <td class="col col-2"> <!-- modifical el 2 para redimensionar la imagen de 1 a 12  -->
-                  <div class="container-fluid">
-                    <img src="img/Yamaha-RSP02T-horizontal.jpg" class="col col-12" alt="">
-                  </div>
-                </td>          
-                <td>Yamaha</td>
-                <td>RSP02T</td>
-                <td>4</td>
-                <td>Madera</td>
-                <td>24</td>
-                <td>8.5</td>
-              </tr>
-                      <tr>      
-                <td class="col col-4"> <!-- modifical el 2 para redimensionar la imagen de 1 a 12  -->
-                  <div class="container-fluid">
-                    <img src="img/Yamaha-RSP02T-horizontal.jpg" class="col col-12" alt="">
-                  </div>
-                </td>          
-                <td>Yamaha</td>
-                <td>RSP02T</td>
-                <td>4</td>
-                <td>Madera</td>
-                <td>24</td>
-                <td>8.5</td>
-              </tr>        <tr>      
-                <td class="col col-2"> <!-- modifical el 2 para redimensionar la imagen de 1 a 12  -->
-                  <div class="container-fluid">
-                    <img src="img/Yamaha-RSP02T-horizontal.jpg" class="col col-12" alt="">
-                  </div>
-                </td>          
-                <td>Yamaha</td>
-                <td>RSP02T</td>
+                <td >Yamaha</td>
+                <td>PAC611VFM</td>
                 <td>4</td>
                 <td>Madera</td>
                 <td>24</td>
