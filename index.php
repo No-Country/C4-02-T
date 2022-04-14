@@ -21,33 +21,26 @@
   </head>
   <body>
   <a name="inicio"></a>
+  <div class="container-fluid">
     <!-- header -->
             <!-- navbar -->
-            <nav class="navbar navbar-expand-lg grid borde_nav">
-                <div class="container-fluid">
-                    <img src="img/guitarview350.png" alt="logo">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    </button>
-                    <div class="collapse navbar-collapse nav justify-content-end" id="navbarNavDropdown">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="btn btn-outline-secondary" href="index.php">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="btn btn-outline-secondary" href="caracteristicas.php">Tipos de guitarra</a>
-                            </li>
-                                                        
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+            <header class="borde_nav">
+              <a href="index.php"><img src="img/guitarview_SF.png" alt="logo" width="550px"></a>
+              <nav>
+                <ul>
+                  <li><a href="index.php">Home</a></li>
+                  <li><a href="caracteristicas.php">Tipos de Guitarras</a></li>
+                </ul>
+              </nav>
+            </header>
             <!-- fin navbar -->
+
     
     <!-- portada - cabecera -->
     <img src="img/cabecera.jpg" class="img-fluid rounded mx-auto d-block" alt="portada" width="100%">
     
-    <div class="container-fluid col col-12 text-center">
-      <div class="container  ">
+    <div class="container-fluid col col-12 col-md-12 text-center">
+      
         <div class="container">
           <br><h1 style="color: #900C3F;">Listado de Guitarras Mejor Rankeadas</h1>          
           <table class="table table-dark">
@@ -80,10 +73,10 @@
             </tbody>
           </table>
         </div>
-      </div>
+      
     </div>
 
-<<<<<<< Updated upstream
+    
     <footer class="bg-dark text-center text-white borde_footer">
       
     <div class="container p-4 pb-0">
@@ -100,13 +93,10 @@
 
       <!-- Copyright -->
       <div class="text-center p-3 text_footer" style="background-color: rgba(0, 0, 0, 0.2);">
-        © 2022 Copyright:
-        <a class="text_footer" href="#">noCountry/C4-02-T</a>
+        © 2022 Copyright: noCountry/C4-02-T
       </div>
       <!-- Copyright -->
     </footer>
-=======
->>>>>>> Stashed changes
 
     
 
@@ -119,5 +109,6 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     -->
+    </div>
   </body>
 </html>
