@@ -2,8 +2,13 @@
     margin: 0;
     padding: 0;
 }
+@font-face {
+    font-family: prosto_one;
+    src: url(../font/ProstoOne-Regular.ttf);
+}
 body{
     background-color: rgb(0, 0, 0);
+    font-family: prosto_one;
 }
 #logo{
     width: 250px;
@@ -13,9 +18,7 @@ body{
 h2{
     color: #886a4a;
 }
-a{
-    text-decoration: none;
-}
+
 .ico{
     background-color: #E3874F;
 }
@@ -25,8 +28,13 @@ a{
 .card{
     margin: 0 2em;;
 }
+
 .borde_nav{
-    border-bottom: 2px solid #886a4a;
+    border-bottom: 3px solid #886a4a;
+    padding-top: 1%;
+}
+a{
+    text-decoration: none;
 }
 .borde_footer{
     border-top: 2px solid #886a4a;
@@ -49,4 +57,89 @@ hr{
 }
 .text_footer{
     color: #707070;
+}
+
+/*******************************/
+
+header{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    transition: 0.7s;
+    z-index: 10;
+}
+.navGuitar{
+    display: flex;
+    justify-content: space-around;
+}
+header.abajo{
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px 20px;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav_{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul, .navGuitar ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li, .navGuitar ul li{
+    list-style: none;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.navGuitar ul li a{
+    border-bottom: 3px solid #37363d;
+}
+header ul li:hover, .navGuitar ul li:hover{
+    background-color: rgba(227, 135, 79, 0.7);
+}
+header ul li a:hover, .navGuitar ul li a:hover{
+    color: #000000;
+}
+.navGuitar ul li a{
+    position: relative;
+    transition: 0.7s;
+    margin: 0 15px;
+    color: #E3874F;
+    letter-spacing: 2px;
+    font-weight: 600;
+    transition: 0.7s;
+    font-size: 13px;
+    text-decoration: none;
+}
+header ul li a{
+    font-size: 25px;
+    position: relative;
+    transition: 0.7s;
+    margin: 0 15px;
+    color: #707070;
+    letter-spacing: 2px;
+    font-weight: 600;
+    transition: 0.7s;
+    text-decoration: none;
+}
+.back_nav{
+    position: relative;
+    width: 100%;
+    height: 15vh;
+    background: url(../img/banner_nav.png);
+    background-size: cover;
+    background-position: center center;
+}
+header .logo{
+    position: relative;
+
 }
