@@ -2,8 +2,13 @@
     margin: 0;
     padding: 0;
 }
+@font-face {
+    font-family: prosto_one;
+    src: url(../font/ProstoOne-Regular.ttf);
+}
 body{
     background-color: rgb(0, 0, 0);
+    font-family: prosto_one;
 }
 #logo{
     width: 250px;
@@ -64,8 +69,11 @@ header{
     display: flex;
     justify-content: space-around;
     transition: 0.7s;
-    
     z-index: 10;
+}
+.navGuitar{
+    display: flex;
+    justify-content: space-around;
 }
 header.abajo{
     background-color: rgba(0, 0, 0, 0.7);
@@ -76,26 +84,44 @@ nav{
     justify-content: center;
     align-items: center;
 }
-header ul{
+.nav_{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul, .navGuitar ul{
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-header ul li{
+header ul li, .navGuitar ul li{
     list-style: none;
-    
+    text-align: center;
     background-color: rgba(0, 0, 0, 0.7);
 }
-header ul li:hover{
-
+.navGuitar ul li a{
+    border-bottom: 3px solid #37363d;
+}
+header ul li:hover, .navGuitar ul li:hover{
     background-color: rgba(227, 135, 79, 0.7);
 }
-header ul li a:hover{
+header ul li a:hover, .navGuitar ul li a:hover{
     color: #000000;
-    
+}
+.navGuitar ul li a{
+    position: relative;
+    transition: 0.7s;
+    margin: 0 15px;
+    color: #E3874F;
+    letter-spacing: 2px;
+    font-weight: 600;
+    transition: 0.7s;
+    font-size: 13px;
+    text-decoration: none;
 }
 header ul li a{
+    font-size: 25px;
     position: relative;
     transition: 0.7s;
     margin: 0 15px;
@@ -103,7 +129,6 @@ header ul li a{
     letter-spacing: 2px;
     font-weight: 600;
     transition: 0.7s;
-    font-size: 25px;
     text-decoration: none;
 }
 .back_nav{
