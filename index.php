@@ -61,22 +61,39 @@ require_once "conexion.php";
               </tr>
             </thead>
             <tbody>
-              
-              
-              <tr >      
-                <td class="col col-2"> <!-- modifical el 2 para redimensionar la imagen de 1 a 12  -->
-                  <div class="container-fluid">
-                    <img src="img/YAMAHA/Yamaha-PAC611VFM-horizontal.png" class="col col-12" alt="">
-                  </div>
-                </td>          
-                <td >Yamaha</td>
-                <td>PAC611VFM</td>
-                <td>4</td>
-                <td>Madera</td>
-                <td>24</td>
-                <td>8.5</td>
-              </tr>
+              <?php
 
+                $query = mysqli_query($conn,"CALL top_5();");
+				        mysqli_close($conn);
+
+                $result = mysqli_num_rows($query);
+
+                if($result > 0)
+                {
+                  while($datos = mysqli_fetch_array($query))
+                  {
+
+                    $foto = 'img/img_guitarras/'.$datos['imagen'];
+                  ?>
+                  <tr >
+                  
+                    <input type="hidden" value="<?php echo $datos['id']; ?>">      
+                    <td class="col col-2"> <!-- modifical el 2 para redimensionar la imagen de 1 a 12  -->
+                      <div class="container-fluid">
+                        <img src="<?php echo $foto; ?>" class="col col-12" alt="">
+                      </div>
+                    </td>          
+                    <td><?php echo $datos['marca']; ?></td>
+                    <td><?php echo $datos['modelo']; ?></td>
+                    <td><?php echo $datos['cuerdas']; ?></td>
+                    <td><?php echo $datos['puente']; ?></td>
+                    <td><?php echo $datos['trastes']; ?></td>
+                    <td><?php echo $datos['puntuacion']; ?></td>
+                  </tr>
+                  <?php 
+                  
+                  }
+                }  ?>
 
             </tbody>
           </table>
