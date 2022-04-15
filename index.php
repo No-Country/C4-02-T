@@ -1,3 +1,15 @@
+<?php 
+
+require_once "conexion.php";
+
+
+
+?>
+
+
+
+
+
 <!doctype html>
 <html lang="es">
   <head>
@@ -8,14 +20,6 @@
     <!-- Bootstrap CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" type="text/css" rel="stylesheet">
-
-    <style>
-      .remove-bg{
-        filter: brightness(1.1);
-        mix-blend-mode: multiply;
-      }
-    </style>
-  
 
     <title>GuitarView - home</title>
   </head>
@@ -64,6 +68,8 @@
               </tr>
             </thead>
             <tbody>
+              
+              
               <tr >      
                 <td class="col col-2"> <!-- modifical el 2 para redimensionar la imagen de 1 a 12  -->
                   <div class="container-fluid">
@@ -77,6 +83,8 @@
                 <td>24</td>
                 <td>8.5</td>
               </tr>
+
+
             </tbody>
           </table>
         </div>
