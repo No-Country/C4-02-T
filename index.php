@@ -8,8 +8,6 @@ require_once "conexion.php";
 
 
 
-
-
 <!doctype html>
 <html lang="es">
   <head>
@@ -28,12 +26,14 @@ require_once "conexion.php";
   <div class="container-fluid">
     <!-- header -->
             <!-- navbar -->
-            <header class="borde_nav">
-              <a href="index.php"><img src="img/guitarview_SF.png" alt="logo" width="550px"></a>
-              <nav>
+            <header class="row borde_nav">
+              <div class="col">
+                <a href="index.php"><img src="img/guitarview_SF.png" alt="logo" width="475em"></a>
+              </div>
+              <nav class="col">
                 <ul>
-                  <li><a href="index.php">Home</a></li>
-                  <li><a href="caracteristicas.php">Tipos de Guitarras</a></li>
+                  <li><a href="index.php" class="col col-md-12">Home</a></li>
+                  <li><a href="caracteristicas.php" class="col col-md-12">Tipos de Guitarras</a></li>
                 </ul>
               </nav>
             </header>
