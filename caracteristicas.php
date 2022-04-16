@@ -18,55 +18,53 @@
   <div class="container-fluid">
     <!-- header -->
     <!-- navbar -->
-    <header>
-      <a href="index.php"><img src="img/guitarview_SF.png" alt="logo" width="550px"></a>
-      <nav>
+    <header class="row">
+      <div class="col">
+        <a href="index.php"><img src="img/guitarview_SF.png" alt="logo" width="475em"></a>
+      </div>
+      <nav class="col">
         <ul>
-          <li><a href="index.php">Home</a></li>
-          <li><a href="caracteristicas.php">Tipos de Guitarras</a></li>
+          <li><a href="index.php" class="col col-md-12">Home</a></li>
+          <li><a href="caracteristicas.php" class="col col-md-12">Tipos de Guitarras</a></li>
         </ul>
       </nav>
     </header>
-    <!-- fin navbar -->
+
     <section class="back_nav borde_nav"></section>
     <!-- portada - cabecera -->
 
-
-    <section class="navGuitar">
-      <div id="nav_ ">
-        <ul>
-          <li class=""><a href="#pestaña"
+    <section class="navGuitar borde_nav">
+      <ul class="row nav_">
+        <li class="col-sm-12 col-md-3 col-xl-2 col-xxl" ><a href="#pestaña"
               onclick="mostrarOcultar('cuerpo', 'stratocaster', 'telecaster', 'superStrat', 'lesPaul', 'sg', 'flayingV', 'fenderJaguar','gibsonExplorer', 'gibsonFirebirds', '7_8cuerdas', 'dobleMastil')">Tipos de cuerpo</a></li>
-          <li class=""><a href="#pestaña"
-              onclick="mostrarOcultar('stratocaster', 'cuerpo', 'telecaster', 'superStrat', 'lesPaul', 'sg', 'flayingV', 'fenderJaguar','gibsonExplorer', 'gibsonFirebirds', '7_8cuerdas', 'dobleMastil')">Stratocaster</a>
-          </li>
-          <li class=""><a href="#pestaña"
-              onclick="mostrarOcultar('telecaster', 'stratocaster', 'cuerpo', 'superStrat', 'lesPaul', 'sg', 'flayingV', 'fenderJaguar','gibsonExplorer', 'gibsonFirebirds', '7_8cuerdas', 'dobleMastil')">Telecaster</a>
-          </li>
-          <li class=""><a href="#pestaña"
+        <li class="col-sm-12 col-md-3 col-xl-2 col-xxl" ><a href="#pestaña"
+              onclick="mostrarOcultar('stratocaster', 'cuerpo', 'telecaster', 'superStrat', 'lesPaul', 'sg', 'flayingV', 'fenderJaguar','gibsonExplorer', 'gibsonFirebirds', '7_8cuerdas', 'dobleMastil')">Stratocaster</a></li>
+        <li class="col-sm-12 col-md-3 col-xl-2 col-xxl" ><a href="#pestaña"
+              onclick="mostrarOcultar('telecaster', 'stratocaster', 'cuerpo', 'superStrat', 'lesPaul', 'sg', 'flayingV', 'fenderJaguar','gibsonExplorer', 'gibsonFirebirds', '7_8cuerdas', 'dobleMastil')">Telecaster</a></li>
+        <li class="col-sm-12 col-md-3 col-xl-2 col-xxl" ><a href="#pestaña"
               onclick="mostrarOcultar('superStrat', 'stratocaster', 'telecaster', 'cuerpo', 'lesPaul', 'sg', 'flayingV', 'fenderJaguar','gibsonExplorer', 'gibsonFirebirds', '7_8cuerdas', 'dobleMastil')">Super Strat</a></li>
-          <li class=""><a href="#pestaña"
+        <li class="col-sm-12 col-md-3 col-xl-2 col-xxl" ><a href="#pestaña"
               onclick="mostrarOcultar('lesPaul', 'stratocaster', 'telecaster', 'superStrat', 'cuerpo', 'sg', 'flayingV', 'fenderJaguar','gibsonExplorer', 'gibsonFirebirds', '7_8cuerdas', 'dobleMastil')">Les Paul</a></li>
-          <li class=""><a href="#pestaña"
-              onclick="mostrarOcultar('sg', 'stratocaster', 'telecaster', 'superStrat', 'lesPaul', 'cuerpo', 'flayingV', 'fenderJaguar','gibsonExplorer', 'gibsonFirebirds', '7_8cuerdas', 'dobleMastil')">SG</a>
-          </li>
-          <li class=""><a href="#pestaña"
+        <li class="col-sm-12 col-md-3 col-xl-2 col-xxl" ><a href="#pestaña"
+              onclick="mostrarOcultar('sg', 'stratocaster', 'telecaster', 'superStrat', 'lesPaul', 'cuerpo', 'flayingV', 'fenderJaguar','gibsonExplorer', 'gibsonFirebirds', '7_8cuerdas', 'dobleMastil')">SG</a></li>
+        <li class="col-sm-12 col-md-3 col-xl-2 col-xxl" ><a href="#pestaña"
               onclick="mostrarOcultar('flayingV', 'stratocaster', 'telecaster', 'superStrat', 'lesPaul', 'sg', 'cuerpo', 'fenderJaguar','gibsonExplorer', 'gibsonFirebirds', '7_8cuerdas', 'dobleMastil')">Flying V</a></li>
-          <li class=""><a href="#pestaña"
+        <li class="col-sm-12 col-md-3 col-xl-2 col-xxl" ><a href="#pestaña"
               onclick="mostrarOcultar('fenderJaguar', 'stratocaster', 'telecaster', 'superStrat', 'lesPaul', 'sg', 'flayingV', 'cuerpo','gibsonExplorer', 'gibsonFirebirds', '7_8cuerdas', 'dobleMastil')">Fender Jaguar</a></li>
-          <li class=""><a href="#pestaña"
+        <li class="col-sm-12 col-md-3 col-xl-2 col-xxl" ><a href="#pestaña"
               onclick="mostrarOcultar('gibsonExplorer', 'stratocaster', 'telecaster', 'superStrat', 'lesPaul', 'sg', 'flayingV', 'fenderJaguar', 'cuerpo', 'gibsonFirebirds', '7_8cuerdas', 'dobleMastil')">Gibson Explorer</a></li>
-          <li class=""><a href="#pestaña"
+        <li class="col-sm-12 col-md-3 col-xl-2 col-xxl" ><a href="#pestaña"
               onclick="mostrarOcultar('gibsonFirebirds', 'stratocaster', 'telecaster', 'superStrat', 'lesPaul', 'sg', 'flayingV', 'fenderJaguar','gibsonExplorer', 'cuerpo', '7_8cuerdas', 'dobleMastil')">Gibson Firebird</a></li>
-          <li class=""><a href="#pestaña"
+        <li class="col-sm-12 col-md-3 col-xl-2 col-xxl" ><a href="#pestaña"
               onclick="mostrarOcultar('7_8cuerdas', 'stratocaster', 'telecaster', 'superStrat', 'lesPaul', 'sg', 'flayingV', 'fenderJaguar','gibsonExplorer', 'gibsonFirebirds', 'cuerpo', 'dobleMastil')">7 y 8 cuerdas</a></li>
-          <li class=""><a href="#pestaña"
+        <li class="col-sm-12 col-md-3 col-xl-2 col-xxl" ><a href="#pestaña"
               onclick="mostrarOcultar('dobleMastil', 'stratocaster', 'telecaster', 'superStrat', 'lesPaul', 'sg', 'flayingV', 'fenderJaguar','gibsonExplorer', 'gibsonFirebirds', '7_8cuerdas', 'cuerpo' )">Doble mastil</a></li>
-        </ul>
-      </div>
-    </section>
+      </ul>
+      </section>
 
-    <div id="cuerpo" class="container-fluid " style="display: none;">
+
+
+    <div id="cuerpo" class="container-fluid padding_texto" style="display: none;">
       <div class="column">
         <h2 class="text_guitarasH">Guitarra de cuerpo sólido</h2>
         <p class="text_guitaras">
@@ -102,11 +100,10 @@
           principales de cuerpo: el estilo ES-335 y el estilo jazz box.
         </p>
         <img src="img/cuerpoHueco.jpg" class="img-fluid rounded mx-auto d-block container-md" alt="guitar" width="100%">
-        <hr>
       </div>
 
     </div>
-    <div id="stratocaster" class="container-fluid " style="display: none;">
+    <div id="stratocaster" class="container-fluid  padding_texto" style="display: none;">
       <div class="column">
         <h4 class="text_guitarasH">Stratocaster</h4>
         <p class="text_guitaras">
@@ -121,7 +118,7 @@
           alt="https://www.pexels.com/es-es/@reneasmussen" width="100%">
       </div>
     </div>
-    <div id="telecaster" class="container-fluid " style="display: none;">
+    <div id="telecaster" class="container-fluid padding_texto" style="display: none;">
       <div class="column">
         <h4 class="text_guitarasH">Telecaster</h4>
         <p class="text_guitaras">
@@ -136,7 +133,7 @@
           alt="https://www.pexels.com/es-es/@andrej-zeman-1340376" width="100%">
       </div>
     </div>
-    <div id="superStrat" class="container-fluid " style="display: none;">
+    <div id="superStrat" class="container-fluid padding_texto" style="display: none;">
       <div class="column">
         <h4 class="text_guitarasH">Super Strat</h4>
         <p class="text_guitaras">
@@ -153,7 +150,7 @@
           alt="https://www.pexels.com/es-es/@pixabay" width="100%">
       </div>
     </div>
-    <div id="lesPaul" class="container-fluid " style="display: none;">
+    <div id="lesPaul" class="container-fluid padding_texto" style="display: none;">
       <div class="column">
         <h4 class="text_guitarasH">Les Paul</h4>
         <p class="text_guitaras">
@@ -170,7 +167,7 @@
           alt="https://www.pexels.com/es-es/@reneasmussen" width="100%">
       </div>
     </div>
-    <div id="sg" class="container-fluid " style="display: none;">
+    <div id="sg" class="container-fluid padding_texto" style="display: none;">
       <div class="column">
         <h4 class="text_guitarasH">SG</h4>
         <p class="text_guitaras">
@@ -187,7 +184,7 @@
           alt="https://www.pexels.com/es-es/@dmitry-demidov-515774" width="100%">
       </div>
     </div>
-    <div id="flayingV" class="container-fluid " style="display: none;">
+    <div id="flayingV" class="container-fluid padding_texto" style="display: none;">
       <div class="column">
         <h4 class="text_guitarasH">Flying V</h4>
         <p class="text_guitaras">
@@ -200,7 +197,7 @@
           alt="http://whatdoyouwanthere.blogspot.com/2010/04/i-wanna-rock.html" width="100%">
       </div>
     </div>
-    <div id="fenderJaguar" class="container-fluid " style="display: none;">
+    <div id="fenderJaguar" class="container-fluid padding_texto" style="display: none;">
       <div class="column">
         <h4 class="text_guitarasH">Fender Jaguar</h4>
         <p class="text_guitaras">
@@ -217,7 +214,7 @@
           width="100%">
       </div>
     </div>
-    <div id="gibsonExplorer" class="container-fluid " style="display: none;">
+    <div id="gibsonExplorer" class="container-fluid padding_texto" style="display: none;">
       <div class="column">
         <h4 class="text_guitarasH">Gibson Explorer</h4>
         <p class="text_guitaras">
@@ -233,7 +230,7 @@
           alt="http://whatdoyouwanthere.blogspot.com/2010/04/i-wanna-rock.html" width="100%">
       </div>
     </div>
-    <div id="gibsonFirebirds" class="container-fluid " style="display: none;">
+    <div id="gibsonFirebirds" class="container-fluid padding_texto" style="display: none;">
       <div class="column">
         <h2 class="text_guitarasH">Gibson Firebird</h2>
         <p class="text_guitaras">
@@ -250,7 +247,7 @@
           width="100%">
       </div>
     </div>
-    <div id="7_8cuerdas" class="container-fluid " style="display: none;">
+    <div id="7_8cuerdas" class="container-fluid padding_texto" style="display: none;">
       <div class="column">
         <h2 class="text_guitarasH">7 cuerdas</h2>
         <p class="text_guitaras">
@@ -280,7 +277,7 @@
         <img src="img/8cuerdas.jpg" class="img-fluid rounded mx-auto d-block container-md" alt="8cuerdas" width="100%">
       </div>
     </div>
-    <div id="dobleMastil" class="container-fluid " style="display: none;">
+    <div id="dobleMastil" class="container-fluid padding_texto" style="display: none;">
       <div class="column">
         <h2 class="text_guitarasH">Guitarra de doble mástil</h2>
         <p class="text_guitaras">
