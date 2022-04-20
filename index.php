@@ -8,15 +8,13 @@ require_once "conexion.php";
 
 
 
-
-
 <!doctype html>
 <html lang="es">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <link rel="icon" type="image/x-icon" href="img/electric-guitar.png">
     <!-- Bootstrap CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" type="text/css" rel="stylesheet">
@@ -28,12 +26,14 @@ require_once "conexion.php";
   <div class="container-fluid">
     <!-- header -->
             <!-- navbar -->
-            <header class="borde_nav">
-              <a href="index.php"><img src="img/guitarview_SF.png" alt="logo" width="550px"></a>
-              <nav>
+            <header class="row borde_nav">
+              <div class="col">
+                <a href="index.php"><img src="img/guitarview_SF.png" alt="logo" width="475em"></a>
+              </div>
+              <nav class="col">
                 <ul>
-                  <li><a href="index.php">Home</a></li>
-                  <li><a href="caracteristicas.php">Tipos de Guitarras</a></li>
+                  <li><a href="index.php" class="col col-md-12">Home</a></li>
+                  <li><a href="caracteristicas.php" class="col col-md-12">Tipos de Guitarras</a></li>
                 </ul>
               </nav>
             </header>
@@ -118,7 +118,7 @@ require_once "conexion.php";
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
+    <script src="js/js_.js"></script>
    
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
