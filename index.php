@@ -43,7 +43,7 @@ require_once "conexion.php";
     <!-- portada - cabecera -->
     <img src="img/cabecera.jpg" class="img-fluid rounded mx-auto d-block" alt="portada" width="100%">
     
-    <div class="container-fluid col col-12 col-md-12 text-center">
+    <div class="container col col-12 col-md-12 text-center">
       
         <div class="container">
           <br><h1 style="color: #900C3F;">Listado de Guitarras Mejor Rankeadas</h1>          
@@ -53,18 +53,14 @@ require_once "conexion.php";
                 <th scope="col-"></th>
                 <th scope="col">Marca</th>
                 <th scope="col">Modelo</th>
-                <th scope="col">Cuerdas</th>
-                <th scope="col">Puente</th>
-                <th scope="col">Trastes</th>
                 <th scope="col">Puntuacion</th>  
                 
               </tr>
             </thead>
             <tbody>
               <?php
-
-                $query = mysqli_query($conn,"CALL top_5();");
-				        mysqli_close($conn);
+                
+                $query = mysqli_query($conn,"SELECT * FROM guitarras;");				        
 
                 $result = mysqli_num_rows($query);
 
@@ -85,9 +81,6 @@ require_once "conexion.php";
                     </td>          
                     <td><?php echo $datos['marca']; ?></td>
                     <td><?php echo $datos['modelo']; ?></td>
-                    <td><?php echo $datos['cuerdas']; ?></td>
-                    <td><?php echo $datos['puente']; ?></td>
-                    <td><?php echo $datos['trastes']; ?></td>
                     <td><?php echo $datos['puntuacion']; ?></td>
                   </tr>
                   <?php 
@@ -97,11 +90,9 @@ require_once "conexion.php";
 
             </tbody>
           </table>
-        </div>
-      
+        </div>      
     </div>
 
-    
     <footer class="bg-dark text-center text-white borde_footer">
       
     <div class="container p-4 pb-0">
