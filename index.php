@@ -141,11 +141,15 @@ require_once "conexion.php";
           <div class="modal-body">
             <div class="container">
             <div class="row">
+<<<<<<< HEAD
 
+=======
+>>>>>>> 1e0fddf4e51cf44183bd5b5734f44a8f94a6c6cd
               <div class="col-6">
                 <div class="cotainer">
                   <select class="form-control">
                     <option>Default select</option>
+<<<<<<< HEAD
                   </select> <br>
                 </div>  
                 <div>
@@ -205,6 +209,19 @@ require_once "conexion.php";
                   </div>
                 </div>
               </div>
+=======
+                  </select> <br>                 
+                </div>                
+              </div>
+              <div class="col-6">
+                <div class="cotainer">
+                    <select class="form-control">
+                      <option>Default select</option>
+                    </select> <br>                 
+                  </div>
+              </div>
+            </div>
+>>>>>>> 1e0fddf4e51cf44183bd5b5734f44a8f94a6c6cd
             </div>
             
           </div>
