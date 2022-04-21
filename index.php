@@ -130,8 +130,8 @@ require_once "conexion.php";
 
     </div>   
 
-    <!-- Modal -->
-    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
       <div class="modal-dialog modal-xl modal-dialog-scrollable ">
         <div class="modal-content">
           <div class="modal-header">
@@ -140,21 +140,75 @@ require_once "conexion.php";
           </div>          
           <div class="modal-body">
             <div class="container">
-              <div class="row col-6">                
-                  <div class="row">
-                    <select class="form-select d-block" aria-label="Default select example">
-                      <option selected>Open this select menu</option>
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
-                    </select>
-                  </div>             
-              </div>
-              <div class="col-6 ">.col-6 </div>
-            </div>
+            <div class="row">
 
+              <div class="col-6">
+                <div class="cotainer">
+                  <select class="form-control">
+                    <option>Default select</option>
+                  </select> <br>
+                </div>  
+                <div>
+                  
+                <div>
+                    <div class="card col" >
+                      <img src="img/8cuerdas.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                      <table class="table">
+                    
+                        <tbody>
+                        <tr>
+                            <td>modelo: arx</td>
+                          </tr>
+                          <tr>
+                            <td>marca: gibson</td>
+                          </tr>
+                          <tr>
+                            <td>precio: 1684357</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col-6">
+                <div class="cotainer">
+                    <select class="form-control">
+                      <option>Default select</option>
+                      <option>Default select2</option>
+                    </select> <br>                 
+                </div>
+                  <div>
+                    <div class="card col" >
+                      <img src="img/8cuerdas.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                      <table class="table">
+                    
+                        <tbody>
+                          <tr>
+                            <td>modelo: arx</td>
+                          </tr>
+                          <tr>
+                            <td>marca: gibson</td>
+                          </tr>
+                          <tr>
+                            <td>precio: 1684357</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+            
           </div>
+          
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
             <button type="button" class="btn btn-primary">Understood</button>
