@@ -140,20 +140,24 @@ require_once "conexion.php";
           </div>          
           <div class="modal-body">
             <div class="container">
-              <div class="row col-6">                
-                  <div class="row">
-                    <select class="form-select d-block" aria-label="Default select example">
-                      <option selected>Open this select menu</option>
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
-                    </select>
-                  </div>             
+            <div class="row">
+              <div class="col-6">
+                <div class="cotainer">
+                  <select class="form-control">
+                    <option>Default select</option>
+                  </select> <br>                 
+                </div>                
               </div>
-              <div class="col-6 ">.col-6 </div>
+              <div class="col-6">
+                <div class="cotainer">
+                    <select class="form-control">
+                      <option>Default select</option>
+                    </select> <br>                 
+                  </div>
+              </div>
             </div>
-
             </div>
+            
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
