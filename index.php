@@ -92,7 +92,7 @@ require_once "conexion.php";
                     <td><?php echo $datos['marca']; ?></td>
                     <td><?php echo $datos['modelo']; ?></td>
                     <td><?php echo $datos['puntuacion']; ?></td>
-                    <td><a class="btn btn-primary" href='infoguitarra.php?id_guitarra=<?php echo $id_guitarra; ?>'>Mas Información</a></td>
+                    <td><a class="btn btn-primary" target="_blank" href='info_guitar.php?id_guitarra=<?php echo $id_guitarra; ?>'>Mas Información</a></td>
                   </tr>
                   <?php 
                   
