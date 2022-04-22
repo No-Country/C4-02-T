@@ -64,7 +64,7 @@
 
 
 
-    <div id="cuerpo" class="container-fluid padding_texto" style="display: none;">
+    <div id="cuerpo" class="container-fluid padding_texto">
       <div class="column">
         <h2 class="text_guitarasH">Guitarra de cuerpo sólido</h2>
         <p class="text_guitaras">
