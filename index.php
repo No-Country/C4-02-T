@@ -72,7 +72,8 @@ require_once "conexion.php";
                 $query = mysqli_query($conn,"SELECT * FROM guitarras;");				        
 
                 $result = mysqli_num_rows($query);
-
+                $listado_guitarras = '<option >Seleccione Guitarra</option>';
+                
                 if($result > 0)
                 {
                   while($datos = mysqli_fetch_array($query))
@@ -80,6 +81,8 @@ require_once "conexion.php";
 
                     $foto = 'img/img_guitarras/'.$datos['imagen'];
                     $id_guitarra = $datos['id'];
+                    $listado_guitarras .= "<option  value=".$datos['id']." >".$datos['marca']." - ".$datos['modelo']."</option>";
+
                   ?>
                   <tr >
                   
@@ -146,32 +149,45 @@ require_once "conexion.php";
             <div class="container">
             <div class="row">
 
-              <div class="col-6">
+              <div class="col-6"> <!-- Primer Tarjeta -->
                 <div class="cotainer">
-                  <select class="form-control" id="guitarra_1">
-                    
-                    <option  value="1" >Fender</option>
-                    <option value="2">strato</option>
-                    <option value="3">yamaha</option>
+                  <select class="form-control" id="guitarra_1">                  
+                    <?php echo $listado_guitarras; ?>
                   </select> <br>
                 </div>  
                 <div>
                   
                 <div>
                     <div class="card col" >
-                      <img src="img/8cuerdas.jpg" class="card-img-top" alt="...">
+                      <img src="img/8cuerdas.jpg" id="img_guitarra_1" class="card-img-top" alt="...">
                       <div class="card-body">
                       <table class="table">
                     
                         <tbody>
-                        <tr>
-                            <td>modelo: arx</td>
+                          <tr>
+                            <input type="hidden" value="0" id="id_guitarra_1">
+                            <td id="marca_guitarra_1">Marca: gibson</td>
                           </tr>
                           <tr>
-                            <td>marca: gibson</td>
+                            <td id="modelo_guitarra_1">Modelo: arx</td>
                           </tr>
                           <tr>
-                            <td>precio: 1684357</td>
+                            <td id="cuerdas_guitarra_1">Cantidad Cuerdas: 6</td>
+                          </tr>
+                          <tr>
+                            <td id="puente_guitarra_1">Puente: isdnfiosadnfsfsdfdsfsdfsdafsd ff</td>
+                          </tr>
+                          <tr>
+                            <td id="trastes_guitarra_1">Trastes: fasdfsdfsadfdsfasfsdfdasf </td>
+                          </tr>
+                          <tr>
+                            <td id="escala_guitarra_1">Escala: 43</td>
+                          </tr>
+                          <tr>
+                            <td id="puntuacion_guitarra_1">Puntuacion: 87 </td>
+                          </tr>
+                          <tr>
+                            <td id="precio_guitarra_1">Precio: $1684357</td>
                           </tr>
                         </tbody>
                       </table>
@@ -182,35 +198,45 @@ require_once "conexion.php";
                 </div>
               </div>
 
-              <div class="col-6">
+              <div class="col-6"> <!-- Segunda Tarjeta -->
                 <div class="cotainer">
-                    <select class="form-control">
-                      <option>Segunda guitarra</option>
-                      <option>Segunda guitarra</option>
-                      <option>Segunda guitarra</option>
-                      <option>Segunda guitarra</option>
-
-                      
+                    <select class="form-control" id="guitarra_2">                      
+                      <?php echo $listado_guitarras; ?>
                     </select> <br>                 
                 </div>
                   <div>
-                    <div class="card col" >
-                      <img src="img/8cuerdas.jpg" class="card-img-top" alt="...">
+                    <div class="card col"  >
+                      <img src="img/8cuerdas.jpg" id="img_guitarra_2" class="card-img-top" alt="...">
                       <div class="card-body">
                       <table class="table">
-                    
-                        <tbody>
-                          <tr>
-                            <td>modelo: arx</td>
-                          </tr>
-                          <tr>
-                            <td>marca: gibson</td>
-                          </tr>
-                          <tr>
-                            <td>precio: 1684357</td>
-                          </tr>
-                        </tbody>
-                      </table>
+                          <tbody>
+                            <tr>
+                              <input type="hidden" value="0" id="id_guitarra_2">
+                              <td id="marca_guitarra_2">Marca: gibson</td>
+                            </tr>
+                            <tr>
+                              <td id="modelo_guitarra_2">Modelo: arx</td>
+                            </tr>
+                            <tr>
+                              <td id="cuerdas_guitarra_2">Cantidad Cuerdas: 6</td>
+                            </tr>
+                            <tr>
+                              <td id="puente_guitarra_2">Puente: isdnfiosadnfsfsdfdsfsdfsdafsd ff</td>
+                            </tr>
+                            <tr>
+                              <td id="trastes_guitarra_2">Trastes: fasdfsdfsadfdsfasfsdfdasf </td>
+                            </tr>
+                            <tr>
+                              <td id="escala_guitarra_2">Escala: 43</td>
+                            </tr>
+                            <tr>
+                              <td id="puntuacion_guitarra_2">Puntuacion: 87 </td>
+                            </tr>
+                            <tr>
+                              <td id="precio_guitarra_2">Precio: $1684357</td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </div>
                   </div>
@@ -235,6 +261,10 @@ require_once "conexion.php";
     <script>      
       document.querySelector('#guitarra_1').addEventListener('change', event => {
         
+        // console.log(event.target.value);
+
+
+        
         fetch('app.php?id_guitarra='+event.target.value)
         .then(response => {
           if(!response.ok){
@@ -243,17 +273,71 @@ require_once "conexion.php";
           return response.json();
         })
         .then(datos => {
-          let html = '<option  selected>Seleccione Guitarra</option>';
+          //let html = '<option  selected>Seleccione Guitarra</option>';
 
+          console.log(datos);
+          //console.log(datos.id)
+
+          document.getElementById("marca_guitarra_1").innerHTML = "Marca: "+datos.marca;
+          document.getElementById("id_guitarra_1").value = datos.id;
+          document.getElementById("modelo_guitarra_1").innerHTML = "Modelo: "+datos.modelo;
+          document.getElementById("cuerdas_guitarra_1").innerHTML = "Cantidad Cuerdas: "+datos.cuerdas;
+          document.getElementById("puente_guitarra_1").innerHTML = "Puente: "+datos.puente;
+          document.getElementById("trastes_guitarra_1").innerHTML = "Trastes: "+datos.trastes;
+          document.getElementById("escala_guitarra_1").innerHTML = "Escala: "+datos.escala;
+          document.getElementById("puntuacion_guitarra_1").innerHTML = "Puntuación: "+datos.puntuacion;
+          document.getElementById("precio_guitarra_1").innerHTML = "Precio: $ "+datos.precio;
+          document.getElementById("img_guitarra_1").src="img/img_guitarras/"+datos.imagen;
+          /*
           if(datos.data.length > 0){
             for(let i=0; i < datos.data.length; i++){
               html += `<option  value="${datos.data[i].id}" >${datos.data[i].marca} - ${datos.data[i].modelo} </option>`;
             }
-          }
+          } */
         })
         .catch(error => {
-          console.error('ocurrio un error');
+          console.error('ocurrio un error'+error);
+        }) 
+
+      });
+
+      document.querySelector('#guitarra_2').addEventListener('change', event => {
+        
+        // console.log(event.target.value);
+        
+        fetch('app.php?id_guitarra='+event.target.value)
+        .then(response => {
+          if(!response.ok){
+            throw new Error('la respuesta fue erronea');
+          }
+          return response.json();
         })
+        .then(datos => {
+          //let html = '<option  selected>Seleccione Guitarra</option>';
+
+          console.log(datos);
+          //console.log(datos.id)
+
+          document.getElementById("marca_guitarra_2").innerHTML = "Marca: "+datos.marca;
+          document.getElementById("id_guitarra_2").value = datos.id;
+          document.getElementById("modelo_guitarra_2").innerHTML = "Modelo: "+datos.modelo;
+          document.getElementById("cuerdas_guitarra_2").innerHTML = "Cantidad Cuerdas: "+datos.cuerdas;
+          document.getElementById("puente_guitarra_2").innerHTML = "Puente: "+datos.puente;
+          document.getElementById("trastes_guitarra_2").innerHTML = "Trastes: "+datos.trastes;
+          document.getElementById("escala_guitarra_2").innerHTML = "Escala: "+datos.escala;
+          document.getElementById("puntuacion_guitarra_2").innerHTML = "Puntuación: "+datos.puntuacion;
+          document.getElementById("precio_guitarra_2").innerHTML = "Precio: $ "+datos.precio;
+          document.getElementById("img_guitarra_2").src="img/img_guitarras/"+datos.imagen;
+          /*
+          if(datos.data.length > 0){
+            for(let i=0; i < datos.data.length; i++){
+              html += `<option  value="${datos.data[i].id}" >${datos.data[i].marca} - ${datos.data[i].modelo} </option>`;
+            }
+          } */
+        })
+        .catch(error => {
+          console.error('ocurrio un error'+error);
+        }) 
 
       });
 
