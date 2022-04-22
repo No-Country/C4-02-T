@@ -166,28 +166,28 @@ require_once "conexion.php";
                         <tbody>
                           <tr>
                             <input type="hidden" value="0" id="id_guitarra_1">
-                            <td id="marca_guitarra_1">Marca: gibson</td>
+                            <td id="marca_guitarra_1">Marca: </td>
                           </tr>
                           <tr>
-                            <td id="modelo_guitarra_1">Modelo: arx</td>
+                            <td id="modelo_guitarra_1">Modelo: </td>
                           </tr>
                           <tr>
-                            <td id="cuerdas_guitarra_1">Cantidad Cuerdas: 6</td>
+                            <td id="cuerdas_guitarra_1">Cantidad Cuerdas: </td>
                           </tr>
                           <tr>
-                            <td id="puente_guitarra_1">Puente: isdnfiosadnfsfsdfdsfsdfsdafsd ff</td>
+                            <td id="puente_guitarra_1">Puente: </td>
                           </tr>
                           <tr>
-                            <td id="trastes_guitarra_1">Trastes: fasdfsdfsadfdsfasfsdfdasf </td>
+                            <td id="trastes_guitarra_1">Trastes: </td>
                           </tr>
                           <tr>
-                            <td id="escala_guitarra_1">Escala: 43</td>
+                            <td id="escala_guitarra_1">Escala:</td>
                           </tr>
                           <tr>
-                            <td id="puntuacion_guitarra_1">Puntuacion: 87 </td>
+                            <td id="puntuacion_guitarra_1">Puntuacion: </td>
                           </tr>
                           <tr>
-                            <td id="precio_guitarra_1">Precio: $1684357</td>
+                            <td id="precio_guitarra_1">Precio: </td>
                           </tr>
                         </tbody>
                       </table>
@@ -212,28 +212,28 @@ require_once "conexion.php";
                           <tbody>
                             <tr>
                               <input type="hidden" value="0" id="id_guitarra_2">
-                              <td id="marca_guitarra_2">Marca: gibson</td>
+                              <td id="marca_guitarra_2">Marca: </td>
                             </tr>
                             <tr>
-                              <td id="modelo_guitarra_2">Modelo: arx</td>
+                              <td id="modelo_guitarra_2">Modelo:</td>
                             </tr>
                             <tr>
-                              <td id="cuerdas_guitarra_2">Cantidad Cuerdas: 6</td>
+                              <td id="cuerdas_guitarra_2">Cantidad Cuerdas:</td>
                             </tr>
                             <tr>
-                              <td id="puente_guitarra_2">Puente: isdnfiosadnfsfsdfdsfsdfsdafsd ff</td>
+                              <td id="puente_guitarra_2">Puente:</td>
                             </tr>
                             <tr>
-                              <td id="trastes_guitarra_2">Trastes: fasdfsdfsadfdsfasfsdfdasf </td>
+                              <td id="trastes_guitarra_2">Trastes:  </td>
                             </tr>
                             <tr>
-                              <td id="escala_guitarra_2">Escala: 43</td>
+                              <td id="escala_guitarra_2">Escala: </td>
                             </tr>
                             <tr>
-                              <td id="puntuacion_guitarra_2">Puntuacion: 87 </td>
+                              <td id="puntuacion_guitarra_2">Puntuacion:  </td>
                             </tr>
                             <tr>
-                              <td id="precio_guitarra_2">Precio: $1684357</td>
+                              <td id="precio_guitarra_2">Precio: </td>
                             </tr>
                           </tbody>
                         </table>
@@ -244,7 +244,7 @@ require_once "conexion.php";
               </div>
               <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-            <button type="button" class="btn btn-primary">Comparar</button>
+            
           </div>
                   </div>
               </div>
