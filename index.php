@@ -50,7 +50,7 @@ require_once "conexion.php";
           <div class="container d-inline" >
             <h1 style="color: #900C3F;">Listado de Guitarras </h1>
             <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="margin: 3em 0;">
               Comparar Guitarras
             </button>
           </div>
@@ -135,7 +135,7 @@ require_once "conexion.php";
       <div class="modal-dialog modal-xl modal-dialog-scrollable ">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+            <h5 class="modal-title" id="staticBackdropLabel">Elige las guitarras a comparar</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>          
           <div class="modal-body">
@@ -145,7 +145,7 @@ require_once "conexion.php";
               <div class="col-6">
                 <div class="cotainer">
                   <select class="form-control">
-                    <option>Default select</option>
+                    <option>Primer guitarra</option>
 
                   </select> <br>
                 </div>  
@@ -179,8 +179,8 @@ require_once "conexion.php";
               <div class="col-6">
                 <div class="cotainer">
                     <select class="form-control">
-                      <option>Default select</option>
-                      <option>Default select2</option>
+                      <option>Segunda guitarra</option>
+                      
                     </select> <br>                 
                 </div>
                   <div>
@@ -206,15 +206,10 @@ require_once "conexion.php";
                   </div>
                 </div>
               </div>
-
-                  </select> <br>                 
-                </div>                
-              </div>
-              <div class="col-6">
-                <div class="cotainer">
-                    <select class="form-control">
-                      <option>Default select</option>
-                    </select> <br>                 
+              <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary">Comparar</button>
+          </div>
                   </div>
               </div>
             </div>
@@ -222,10 +217,7 @@ require_once "conexion.php";
             
           </div>
           
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Understood</button>
-          </div>
+          
         </div>
       </div>
     </div>
