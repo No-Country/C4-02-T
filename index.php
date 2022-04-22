@@ -50,7 +50,7 @@ require_once "conexion.php";
           <div class="container d-inline" >
             <h1 style="color: #900C3F;">Listado de Guitarras </h1>
             <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="margin: 3em 0;">
+            <button type="button" onclick="listado_modal();" id="boton_modal" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="margin: 3em 0;">
               Comparar Guitarras
             </button>
           </div>
@@ -61,7 +61,8 @@ require_once "conexion.php";
                 <th scope="col-"></th>
                 <th scope="col">Marca</th>
                 <th scope="col">Modelo</th>
-                <th scope="col">Puntuacion</th>  
+                <th scope="col">Puntuacion</th>
+                <th scope="col">Opcion</th>  
                 
               </tr>
             </thead>
@@ -78,6 +79,7 @@ require_once "conexion.php";
                   {
 
                     $foto = 'img/img_guitarras/'.$datos['imagen'];
+                    $id_guitarra = $datos['id'];
                   ?>
                   <tr >
                   
@@ -90,6 +92,7 @@ require_once "conexion.php";
                     <td><?php echo $datos['marca']; ?></td>
                     <td><?php echo $datos['modelo']; ?></td>
                     <td><?php echo $datos['puntuacion']; ?></td>
+                    <td><a class="btn btn-primary" href='infoguitarra.php?id_guitarra=<?php echo $id_guitarra; ?>'>Mas Información</a></td>
                   </tr>
                   <?php 
                   
@@ -127,6 +130,7 @@ require_once "conexion.php";
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="js/bootstrap.bundle.min.js" ></script>
     <script src="js/js_.js"></script>
+    <script src="js/app.js"></script>
 
     </div>   
 
@@ -144,9 +148,11 @@ require_once "conexion.php";
 
               <div class="col-6">
                 <div class="cotainer">
-                  <select class="form-control">
-                    <option>Primer guitarra</option>
-
+                  <select class="form-control" id="guitarra_1">
+                    
+                    <option  value="1" >Fender</option>
+                    <option value="2">strato</option>
+                    <option value="3">yamaha</option>
                   </select> <br>
                 </div>  
                 <div>
@@ -180,6 +186,10 @@ require_once "conexion.php";
                 <div class="cotainer">
                     <select class="form-control">
                       <option>Segunda guitarra</option>
+                      <option>Segunda guitarra</option>
+                      <option>Segunda guitarra</option>
+                      <option>Segunda guitarra</option>
+
                       
                     </select> <br>                 
                 </div>
@@ -221,6 +231,33 @@ require_once "conexion.php";
         </div>
       </div>
     </div>
+
+    <script>      
+      document.querySelector('#guitarra_1').addEventListener('change', event => {
+        
+        fetch('app.php?id_guitarra='+event.target.value)
+        .then(response => {
+          if(!response.ok){
+            throw new Error('la respuesta fue erronea');
+          }
+          return response.json();
+        })
+        .then(datos => {
+          let html = '<option  selected>Seleccione Guitarra</option>';
+
+          if(datos.data.length > 0){
+            for(let i=0; i < datos.data.length; i++){
+              html += `<option  value="${datos.data[i].id}" >${datos.data[i].marca} - ${datos.data[i].modelo} </option>`;
+            }
+          }
+        })
+        .catch(error => {
+          console.error('ocurrio un error');
+        })
+
+      });
+
+    </script>
 
 
   </body>
