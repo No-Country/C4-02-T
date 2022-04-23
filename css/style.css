@@ -33,6 +33,7 @@ h2{
 .borde_nav{
     border-bottom: 3px solid #886a4a;
     width: 100%;
+    padding-top: 1em;
 }
 a{
     text-decoration: none;
