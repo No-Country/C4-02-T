@@ -167,11 +167,16 @@ header .logo{
 
 }
 .back_modal{
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgb(55, 54, 61, 0.7);
     border: 1px solid #E3874F;;
+}
+.modal-header{
+    display:block !important;
+    text-align: center;
 }
 .txt_color{
     color: #ffffff;
+    
 }
 .txt_red{
     color: #900C3F;
@@ -179,7 +184,10 @@ header .logo{
 .shadow_tabla{
     box-shadow: 5px 5px 8px rgba(227, 135, 79, 0.7), -5px -5px 8px rgba(227, 135, 79, 0.7), -5px 5px 8px rgba(227, 135, 79, 0.7), 5px -5px 8px rgba(227, 135, 79, 0.7);
 }
-
+.btn_modal_footer_close{
+    padding: 0.5rem 1em !important;
+    margin-right: 1em;
+}
 @media only screen and (max-width: 800px) {
     .back_nav{
         height:17vh;
