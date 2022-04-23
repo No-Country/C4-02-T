@@ -1,6 +1,9 @@
 *{
     margin: 0;
     padding: 0;
+    padding-right: var(--bs-gutter-x,.0) !important;
+    padding-left: var(--bs-gutter-x,.0) !important;
+    --bs-gutter-x: 0 !important;
 }
 @font-face {
     font-family: prosto_one;
@@ -29,7 +32,7 @@ h2{
 
 .borde_nav{
     border-bottom: 3px solid #886a4a;
-    
+    width: 100%;
 }
 a{
     text-decoration: none;
@@ -77,6 +80,8 @@ header{
 header.abajo{
     background-color: rgba(0, 0, 0, 0.7);
     padding: 15px 20px;
+    border-bottom: 3px solid #886a4a;
+    width: 100%;
 }
 nav{
     display: flex;
@@ -174,6 +179,7 @@ header .logo{
 .shadow_tabla{
     box-shadow: 5px 5px 8px rgba(227, 135, 79, 0.7), -5px -5px 8px rgba(227, 135, 79, 0.7), -5px 5px 8px rgba(227, 135, 79, 0.7), 5px -5px 8px rgba(227, 135, 79, 0.7);
 }
+
 @media only screen and (max-width: 800px) {
     .back_nav{
         height:17vh;
