@@ -43,22 +43,22 @@ require_once "conexion.php";
     <!-- portada - cabecera -->
     <img src="img/cabecera.jpg" class="img-fluid rounded mx-auto d-block" alt="portada" width="100%">
     
-    <div class="container col col-12 col-md-12 text-center">
+    <div class="container-fuid text-center">
       
         <div class="container">
           <br>
-          <div class="container d-inline" >
-            <h1 style="color: #900C3F;">Listado de Guitarras </h1>
+          <div class="container d-inline " >
+            <h1 class="txt_red">Listado de Guitarras </h1>
             <!-- Button trigger modal -->
-            <button type="button" onclick="listado_modal();" id="boton_modal" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="margin: 3em 0;">
+            <button type="button" onclick="listado_modal();" id="boton_modal" class="btn btn_tabla_ btn_tabla_guitarra" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="margin: 3em 0;">
               Comparar Guitarras
             </button>
           </div>
                      
-          <table class="table table-dark">
+          <table class="table table-dark shadow_tabla ">
             <thead>
               <tr>
-                <th scope="col-"></th>
+                <th scope="col"></th>
                 <th scope="col">Marca</th>
                 <th scope="col">Modelo</th>
                 <th scope="col">Puntuacion</th>
@@ -95,7 +95,7 @@ require_once "conexion.php";
                     <td><?php echo $datos['marca']; ?></td>
                     <td><?php echo $datos['modelo']; ?></td>
                     <td><?php echo $datos['puntuacion']; ?></td>
-                    <td><a class="btn btn-primary" target="_blank" href='info_guitar.php?id_guitarra=<?php echo $id_guitarra; ?>'>Mas Información</a></td>
+                    <td><a class="btn btn_tabla_guitarra" target="_blank" href='info_guitar.php?id_guitarra=<?php echo $id_guitarra; ?>'>Detalles</a></td>
                   </tr>
                   <?php 
                   
@@ -140,10 +140,10 @@ require_once "conexion.php";
 <!-- Modal -->
 <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
       <div class="modal-dialog modal-xl modal-dialog-scrollable ">
-        <div class="modal-content">
+        <div class="modal-content back_modal">
           <div class="modal-header">
-            <h5 class="modal-title" id="staticBackdropLabel">Elige las guitarras a comparar</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <h5 class="modal-title txt_color" id="staticBackdropLabel">Elige las guitarras a comparar</h5>
+            <button type="button" class="btn-close txt_red" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>          
           <div class="modal-body">
             <div class="container">
