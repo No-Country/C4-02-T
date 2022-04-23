@@ -107,10 +107,10 @@ header ul li, .navGuitar ul li{
 .navGuitar ul li a{
     border-bottom: 3px solid #37363d;
 }
-header ul li:hover, .navGuitar ul li:hover{
+header ul li:hover, .navGuitar ul li:hover, .btn_tabla_guitarra:hover{
     background-color: rgba(227, 135, 79, 0.7);
 }
-header ul li a:hover, .navGuitar ul li a:hover{
+header ul li a:hover, .navGuitar ul li a:hover, .btn_tabla_guitarra:hover{
     color: #000000;
 }
 .navGuitar ul li a{
@@ -124,7 +124,18 @@ header ul li a:hover, .navGuitar ul li a:hover{
     font-size: 13px;
     text-decoration: none;
 }
-header ul li a{
+.btn_tabla_guitarra{
+    position: relative;
+    transition: 0.7s;
+    margin: 0 5px;
+    color: #E3874F;
+    letter-spacing: 2px;
+    font-weight: 600;
+    transition: 0.7s;
+    font-size: 1em;
+    text-decoration: none;
+}
+header ul li a, .btn_tabla_{
     font-size: 25px;
     position: relative;
     transition: 0.7s;
@@ -150,7 +161,19 @@ header .logo{
     position: relative;
 
 }
-
+.back_modal{
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid #E3874F;;
+}
+.txt_color{
+    color: #ffffff;
+}
+.txt_red{
+    color: #900C3F;
+}
+.shadow_tabla{
+    box-shadow: 5px 5px 8px rgba(227, 135, 79, 0.7), -5px -5px 8px rgba(227, 135, 79, 0.7), -5px 5px 8px rgba(227, 135, 79, 0.7), 5px -5px 8px rgba(227, 135, 79, 0.7);
+}
 @media only screen and (max-width: 800px) {
     .back_nav{
         height:17vh;
