@@ -26,9 +26,10 @@ require_once "conexion.php";
   <div class="container-fluid">
     <!-- header -->
             <!-- navbar -->
-            <header class="row borde_nav">
+            
+            <header class="row">
               <div class="col">
-                <a href="index.php"><img src="img/guitarview_SF.png" alt="logo" width="475em"></a>
+                <a href="index.php"><img src="img/guitarview_SF.png" alt="logo" width="100%"></a>
               </div>
               <nav class="col">
                 <ul>
@@ -45,9 +46,9 @@ require_once "conexion.php";
     
     <div class="container-fuid text-center">
       
-        <div class="container">
+        <div class="container-sm">
           <br>
-          <div class="container d-inline " >
+          <div class="col d-inline " >
             <h1 class="txt_red">Listado de Guitarras </h1>
             <!-- Button trigger modal -->
             <button type="button" onclick="listado_modal();" id="boton_modal" class="btn btn_tabla_ btn_tabla_guitarra" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="margin: 3em 0;">
