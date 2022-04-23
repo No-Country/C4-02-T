@@ -33,7 +33,7 @@
     <section class="back_nav borde_nav"></section>
     <!-- portada - cabecera -->
 
-    <section class="navGuitar borde_nav">
+    <section class=" navGuitar borde_nav">
       <ul class="row nav_">
         <li class="col-sm-12 col-md-3 col-xl-2 col-xxl" ><a href="#pestaña"
               onclick="mostrarOcultar('cuerpo', 'stratocaster', 'telecaster', 'superStrat', 'lesPaul', 'sg', 'flayingV', 'fenderJaguar','gibsonExplorer', 'gibsonFirebirds', '7_8cuerdas', 'dobleMastil')">Tipos de cuerpo</a></li>
@@ -64,7 +64,7 @@
 
 
 
-    <div id="cuerpo" class="container-fluid padding_texto">
+    <div id="cuerpo" class="container padding_texto">
       <div class="column">
         <h2 class="text_guitarasH">Guitarra de cuerpo sólido</h2>
         <p class="text_guitaras">
@@ -103,7 +103,7 @@
       </div>
 
     </div>
-    <div id="stratocaster" class="container-fluid  padding_texto" style="display: none;">
+    <div id="stratocaster" class="container  padding_texto" style="display: none;">
       <div class="column">
         <h4 class="text_guitarasH">Stratocaster</h4>
         <p class="text_guitaras">
@@ -118,7 +118,7 @@
           alt="https://www.pexels.com/es-es/@reneasmussen" width="100%">
       </div>
     </div>
-    <div id="telecaster" class="container-fluid padding_texto" style="display: none;">
+    <div id="telecaster" class="container padding_texto" style="display: none;">
       <div class="column">
         <h4 class="text_guitarasH">Telecaster</h4>
         <p class="text_guitaras">
@@ -133,7 +133,7 @@
           alt="https://www.pexels.com/es-es/@andrej-zeman-1340376" width="100%">
       </div>
     </div>
-    <div id="superStrat" class="container-fluid padding_texto" style="display: none;">
+    <div id="superStrat" class="container padding_texto" style="display: none;">
       <div class="column">
         <h4 class="text_guitarasH">Super Strat</h4>
         <p class="text_guitaras">
@@ -150,7 +150,7 @@
           alt="https://www.pexels.com/es-es/@pixabay" width="100%">
       </div>
     </div>
-    <div id="lesPaul" class="container-fluid padding_texto" style="display: none;">
+    <div id="lesPaul" class="container padding_texto" style="display: none;">
       <div class="column">
         <h4 class="text_guitarasH">Les Paul</h4>
         <p class="text_guitaras">
@@ -167,7 +167,7 @@
           alt="https://www.pexels.com/es-es/@reneasmussen" width="100%">
       </div>
     </div>
-    <div id="sg" class="container-fluid padding_texto" style="display: none;">
+    <div id="sg" class="container padding_texto" style="display: none;">
       <div class="column">
         <h4 class="text_guitarasH">SG</h4>
         <p class="text_guitaras">
@@ -184,7 +184,7 @@
           alt="https://www.pexels.com/es-es/@dmitry-demidov-515774" width="100%">
       </div>
     </div>
-    <div id="flayingV" class="container-fluid padding_texto" style="display: none;">
+    <div id="flayingV" class="container padding_texto" style="display: none;">
       <div class="column">
         <h4 class="text_guitarasH">Flying V</h4>
         <p class="text_guitaras">
@@ -197,7 +197,7 @@
           alt="http://whatdoyouwanthere.blogspot.com/2010/04/i-wanna-rock.html" width="100%">
       </div>
     </div>
-    <div id="fenderJaguar" class="container-fluid padding_texto" style="display: none;">
+    <div id="fenderJaguar" class="container padding_texto" style="display: none;">
       <div class="column">
         <h4 class="text_guitarasH">Fender Jaguar</h4>
         <p class="text_guitaras">
@@ -214,7 +214,7 @@
           width="100%">
       </div>
     </div>
-    <div id="gibsonExplorer" class="container-fluid padding_texto" style="display: none;">
+    <div id="gibsonExplorer" class="container padding_texto" style="display: none;">
       <div class="column">
         <h4 class="text_guitarasH">Gibson Explorer</h4>
         <p class="text_guitaras">
@@ -230,7 +230,7 @@
           alt="http://whatdoyouwanthere.blogspot.com/2010/04/i-wanna-rock.html" width="100%">
       </div>
     </div>
-    <div id="gibsonFirebirds" class="container-fluid padding_texto" style="display: none;">
+    <div id="gibsonFirebirds" class="container padding_texto" style="display: none;">
       <div class="column">
         <h2 class="text_guitarasH">Gibson Firebird</h2>
         <p class="text_guitaras">
@@ -247,7 +247,7 @@
           width="100%">
       </div>
     </div>
-    <div id="7_8cuerdas" class="container-fluid padding_texto" style="display: none;">
+    <div id="7_8cuerdas" class="container padding_texto" style="display: none;">
       <div class="column">
         <h2 class="text_guitarasH">7 cuerdas</h2>
         <p class="text_guitaras">
@@ -277,7 +277,7 @@
         <img src="img/8cuerdas.jpg" class="img-fluid rounded mx-auto d-block container-md" alt="8cuerdas" width="100%">
       </div>
     </div>
-    <div id="dobleMastil" class="container-fluid padding_texto" style="display: none;">
+    <div id="dobleMastil" class="container padding_texto" style="display: none;">
       <div class="column">
         <h2 class="text_guitarasH">Guitarra de doble mástil</h2>
         <p class="text_guitaras">
